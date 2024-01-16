@@ -15,4 +15,20 @@ class Product {
     $this->image = $_image;
     $this->price = $_price;
   }
+
+  public function getId() {
+    return $this->id;
+  }
+  public function getName() {
+    return $this->name;
+  }
+  public function getCategory() {
+    return $this->category;
+  }
+  public function getImage() {
+    return $this->image;
+  }
+  public function getPrice() {
+    return $this->price;
+  }
 }

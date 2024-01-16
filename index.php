@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/Models/Product.php';
-require_once __DIR__ . '/Models/Customer.php';
-require_once __DIR__ . '/Models/Cart.php';
-require_once __DIR__ . '/Models/Order.php';
+// require_once __DIR__ . '/Models/Product.php';
+// require_once __DIR__ . '/Models/Customer.php';
+// require_once __DIR__ . '/Models/Cart.php';
+// require_once __DIR__ . '/Models/Order.php';
 require_once __DIR__ . '/Database/db.php';
 
 ?>
@@ -27,10 +27,10 @@ require_once __DIR__ . '/Database/db.php';
           <?php foreach($products as $product) : ?>
             <div class="col-4">
               <div class="card" style="width: 18rem;">
-                <img src="<?php echo $product['image']?>" class="card-img-top object-fit-contain img-fluid" alt="<?php echo $product['name'] ?>">
+                <img src="<?php echo $product->getImage()?>" class="card-img-top object-fit-contain img-fluid" alt="<?php echo $product->getName() ?>">
                 <div class="card-body">
-                  <h5 class="card-title"><?php echo $product['name'] ?></h5>
-                  <p class="card-text">Prezzo: <?php echo $product['price'] ?>€</p>
+                  <h5 class="card-title"><?php echo $product->getName() ?></h5>
+                  <p class="card-text">Prezzo: <?php echo $product->getPrice() ?>€</p>
                 </div>
               </div>
             </div>
