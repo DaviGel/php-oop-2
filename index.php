@@ -31,6 +31,7 @@ require_once __DIR__ . '/Database/db.php';
                 <div class="card-body">
                   <h5 class="card-title"><?php echo $product->getName() ?></h5>
                   <p class="card-text">Prezzo: <?php echo $product->getPrice() ?>€</p>
+                  <strong class="text-center"><?php echo $product->getType() ?></strong>
                 </div>
               </div>
             </div>

@@ -3,12 +3,12 @@
 require_once __DIR__ . '/../Models/Product.php';
 
 $products = [
-  new Product('Cibo per cani', 123, 'Dogs', 'img/img-eukanuba.jpeg', 68),
-  new Product('Osso per cani', 1678, 'Dogs', 'img/img-osso.webp', 12),
-  new Product('Cibo per gatti', 34, 'Cats', 'img/img-sheba.jpeg', 75),
-  new Product('Tiragraffi per gatti', 5678, 'Cats', 'img/img-tiragraffi.jpeg', 50),
-  new Product('Cuccia per cani', 84, 'Dogs', 'img/img-cuccia_cani.jpeg', 65),
-  new Product('Cuccia per gatti', 1380, 'Cats', 'img/img-cuccia_gatti.jpeg', 120),
+  new Product('Cibo per cani', 123, 'Dogs', 'Cibo', 'img/img-eukanuba.jpeg', 68),
+  new Product('Osso per cani', 1678, 'Dogs', 'Gioco', 'img/img-osso.webp', 12),
+  new Product('Cibo per gatti', 34, 'Cats', 'Cibo', 'img/img-sheba.jpeg', 75),
+  new Product('Tiragraffi per gatti', 5678, 'Cats', 'Gioco', 'img/img-tiragraffi.jpeg', 50),
+  new Product('Cuccia per cani', 84, 'Dogs', 'Cuccia', 'img/img-cuccia_cani.jpeg', 65),
+  new Product('Cuccia per gatti', 1380, 'Cats', 'Cuccia', 'img/img-cuccia_gatti.jpeg', 120),
 ];
 
 // $products = [
