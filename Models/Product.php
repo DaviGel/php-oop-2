@@ -1,7 +1,11 @@
 <?php
 
-class Product {
+trait Id {
   private $id;
+}
+
+class Product {
+  use id;
   private $name;
   private $category;
   private $type;
@@ -23,14 +27,14 @@ class Product {
   }
 
   public function getName() {
-      try {
-        if (!is_string($this->name)) {
-          throw new Exception('Il nome non è una stringa!');
-        }
-        return $this->name;
-      } catch (Exception $e) {
-        echo 'Eccezione: ' . $e->getMessage();
+    try {
+      if (!is_string($this->name)) {
+        throw new Exception('Il nome non è una stringa!');
       }
+      return $this->name;
+    } catch (Exception $e) {
+      echo 'Eccezione: ' . $e->getMessage();
+    }
   }
 
   public function getCategory() {
